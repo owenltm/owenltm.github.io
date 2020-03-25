@@ -1,0 +1,16 @@
+body {
+    margin: 1rem;
+    /* background: rgba(65, 65, 65, 1); */
+}
+
+.page-container{
+    width: 70%;
+    margin: auto;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
