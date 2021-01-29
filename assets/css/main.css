@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #FFFFFF;
+}
+
+.nav-container a {
+  color: #212121;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  display: none;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.hero {
+  background: #FFFFFF;
+  color: #212121;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  height: 80vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 2em;
+}
+
+.hero .hero-title-container .hero-title {
+  margin: 0;
+}
+
+.hero .hero-title-container .subtitle {
+  font-weight: normal;
+}
+
+.hero-nav, .hero-social {
+  display: none;
+}
+
+section {
+  padding: 3em 2em;
+  text-align: center;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.about .about-text {
+  margin-bottom: 2em;
+  line-height: 1.5em;
+}
+
+.about .right img {
+  border-radius: 50%;
+  width: 75%;
+}
+
+.skill-container .skill-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.skill-container .skill-item-container .skill-item {
+  padding: 0.3em 1em;
+  font-weight: bold;
+}
+
+.work-container {
+  margin-bottom: 2em;
+}
+
+.work-container .work-label-container {
+  margin: 0.5em;
+}
+
+.work-container .work-label-container .work-title {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.work-container .work-label-container .work-desc {
+  line-height: 1.5em;
+}
+
+.text-field {
+  border: none;
+  width: 100%;
+  text-align: center;
+  background: #eeeeee;
+  padding: 1em 0;
+  margin-bottom: 0.8em;
+}
+
+.button {
+  border: 0;
+  width: 100%;
+  padding: 0.8em 1em;
+  background: #212121;
+  color: #FFFFFF;
+}
+
+.social-container {
+  margin-top: 3em;
+}
+
+.social-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1em;
+}
+
+.footer {
+  background-color: #FFFFFF;
+  padding: 1em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 360px) {
+  header .logo {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 2em 4em;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .hero {
+    text-align: left;
+    padding: 3em 4em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 95% 5%;
+        grid-template-columns: 95% 5%;
+  }
+  .hero .hero-nav {
+    display: inline;
+    margin: 1em;
+    font-size: 14px;
+  }
+  .hero .hero-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .hero-nav ul li {
+    margin-right: 1.5em;
+  }
+  .hero .hero-social {
+    display: inline;
+  }
+  section {
+    text-align: left;
+  }
+  .section-title {
+    margin-bottom: 0.8em;
+  }
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 40%;
+        grid-template-columns: 50% 40%;
+  }
+  .about .left {
+    margin: auto;
+  }
+  .about .right img {
+    float: right;
+  }
+  .skill-column {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+  }
+  .skill-column .skill-container .skill-title {
+    margin-bottom: 0.5em;
+  }
+  .skill-column .skill-container .skill-item-container {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-right: 1em;
+    margin-bottom: 2em;
+  }
+  .skill-column .skill-container .skill-item-container .skill-item {
+    padding: 0;
+    padding-right: 1em;
+  }
+  .work-column {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+  }
+  .work-column .work-container {
+    padding: 0.5em 0.8em;
+  }
+  .message-column {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  .message-column .social-container {
+    margin: auto 4em;
+  }
+  .message-column .social-container ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer {
+    padding: 2em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    padding: 2em 6em;
+  }
+  .hero {
+    padding: 3em 6em;
+  }
+  section {
+    padding: 3em 6em;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 8em;
+  }
+  .hero {
+    padding: 3em 8em;
+  }
+  section {
+    padding: 3em 8em;
+  }
+  .about {
+    -ms-grid-columns: 50% 30%;
+        grid-template-columns: 50% 30%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
