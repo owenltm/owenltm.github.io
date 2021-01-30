@@ -35,7 +35,8 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
+  align-items: center;
+  padding: 1em 0.7em;
 
   .logo {
     display: none;
@@ -58,10 +59,11 @@ header {
 .hero {
   background: #FFFFFF;
   color: #212121;
-  display: grid;
+  display: flex;
   text-align: center;
-  height: 80vh;
+  height: 50vh;
   align-content: center;
+  align-items: center;
   padding: 2em;
 
   .hero-title-container {
@@ -176,6 +178,10 @@ section {
   header {
     padding: 2em 4em;
     justify-content: left;
+
+    .logo {
+      margin-right: 2em;
+    }
   }
 
   .hero {
@@ -184,16 +190,28 @@ section {
     display: grid;
     grid-template-columns: 95% 5%;
 
-    .hero-nav {
-      display: inline;
-      margin: 1em;
-      font-size: 14px;
-      
-      ul {
-        display: flex;
+    .hero-content {
+      justify-content: center;
 
-        li {
-          margin-right: 1.5em;
+      .hero-title-container {
+        margin-bottom: 1em;
+
+        .hero-title {
+          padding: 0.1em 0;
+        }
+      }
+
+      .hero-nav {
+        display: inline;
+        margin: 2em;
+        font-size: 14px;
+        
+        ul {
+          display: flex;
+  
+          li {
+            margin-right: 1.5em;
+          }
         }
       }
     }
@@ -201,11 +219,15 @@ section {
     .hero-social {
       display: inline;
       
+      ul li a svg{
+        padding: 0.4em 0;
+      }
     }
   }
 
   section {
     text-align: left;
+    padding: 3em 4em;
   }
 
   .section-title {
@@ -218,6 +240,10 @@ section {
 
     .left {
       margin: auto;
+
+      .about-text {
+        padding: 0 0.8em;
+      }
     }
 
     .right img {
@@ -230,6 +256,7 @@ section {
     grid-template-columns: 33% 33% 33%;
 
     .skill-container {
+      padding: 0.5em 0.8em;
 
       .skill-title {
         margin-bottom: 0.5em;
@@ -260,7 +287,11 @@ section {
 
   .message-column {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 40%;
+
+    .message-form {
+      padding: 0 0.8em;
+    }
 
     .social-container{
       margin: auto 4em;
@@ -279,14 +310,24 @@ section {
 @media only screen and (min-width: 1000px) {
   header {
     padding: 2em 6em;
+
+    .logo {
+      font-size: 24px;
+      margin-right: 2em;
+    }
   }
 
   .hero {
     padding: 3em 6em;
+    height: 70vh;
   }
 
   section {
     padding: 3em 6em;
+  }
+
+  .about {
+    grid-template-columns: 60% 40%;
   }
 }
 
@@ -304,7 +345,7 @@ section {
   }
 
   .about {
-    grid-template-columns: 50% 30%;
+    grid-template-columns: 60% 30%;
   }
 
   

@@ -38,7 +38,10 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0.7em;
 }
 
 header .logo {
@@ -60,12 +63,16 @@ header nav ul a {
 .hero {
   background: #FFFFFF;
   color: #212121;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
-  height: 80vh;
+  height: 50vh;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2em;
 }
 
@@ -184,6 +191,9 @@ section {
         -ms-flex-pack: left;
             justify-content: left;
   }
+  header .logo {
+    margin-right: 2em;
+  }
   .hero {
     text-align: left;
     padding: 3em 4em;
@@ -192,24 +202,39 @@ section {
     -ms-grid-columns: 95% 5%;
         grid-template-columns: 95% 5%;
   }
-  .hero .hero-nav {
+  .hero .hero-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero-content .hero-title-container {
+    margin-bottom: 1em;
+  }
+  .hero .hero-content .hero-title-container .hero-title {
+    padding: 0.1em 0;
+  }
+  .hero .hero-content .hero-nav {
     display: inline;
-    margin: 1em;
+    margin: 2em;
     font-size: 14px;
   }
-  .hero .hero-nav ul {
+  .hero .hero-content .hero-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .hero .hero-nav ul li {
+  .hero .hero-content .hero-nav ul li {
     margin-right: 1.5em;
   }
   .hero .hero-social {
     display: inline;
   }
+  .hero .hero-social ul li a svg {
+    padding: 0.4em 0;
+  }
   section {
     text-align: left;
+    padding: 3em 4em;
   }
   .section-title {
     margin-bottom: 0.8em;
@@ -223,6 +248,9 @@ section {
   .about .left {
     margin: auto;
   }
+  .about .left .about-text {
+    padding: 0 0.8em;
+  }
   .about .right img {
     float: right;
   }
@@ -231,6 +259,9 @@ section {
     display: grid;
     -ms-grid-columns: 33% 33% 33%;
         grid-template-columns: 33% 33% 33%;
+  }
+  .skill-column .skill-container {
+    padding: 0.5em 0.8em;
   }
   .skill-column .skill-container .skill-title {
     margin-bottom: 0.5em;
@@ -258,8 +289,11 @@ section {
   .message-column {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 40% 60%;
-        grid-template-columns: 40% 60%;
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+  }
+  .message-column .message-form {
+    padding: 0 0.8em;
   }
   .message-column .social-container {
     margin: auto 4em;
@@ -278,11 +312,20 @@ section {
   header {
     padding: 2em 6em;
   }
+  header .logo {
+    font-size: 24px;
+    margin-right: 2em;
+  }
   .hero {
     padding: 3em 6em;
+    height: 70vh;
   }
   section {
     padding: 3em 6em;
+  }
+  .about {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
   }
 }
 
@@ -297,8 +340,8 @@ section {
     padding: 3em 8em;
   }
   .about {
-    -ms-grid-columns: 50% 30%;
-        grid-template-columns: 50% 30%;
+    -ms-grid-columns: 60% 30%;
+        grid-template-columns: 60% 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */
