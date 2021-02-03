@@ -13,6 +13,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #212121;
 }
 
 p {
@@ -338,6 +339,22 @@ section {
   }
   section {
     padding: 3em 8em;
+  }
+  .about {
+    -ms-grid-columns: 60% 30%;
+        grid-template-columns: 60% 30%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  header {
+    padding: 2em 16em;
+  }
+  .hero {
+    padding: 6em 16em;
+  }
+  section {
+    padding: 6em 16em;
   }
   .about {
     -ms-grid-columns: 60% 30%;
