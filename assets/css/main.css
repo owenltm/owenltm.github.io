@@ -201,6 +201,12 @@ section {
 }
 
 @media only screen and (min-width: 768px) {
+  .nav-container {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
   header {
     padding: 2em 4em;
     -webkit-box-pack: left;
