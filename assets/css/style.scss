@@ -51,6 +51,7 @@ img {
   border: none;
   background-color: $black;
   color: $white;
+  border-radius: 0.1rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -125,7 +126,17 @@ section {
   }
 }
 
-// TODO: SKILLS SECTION STYLE HERE
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .skill-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 0.5rem 1rem;
+  }
+}
 
 .work-container {
   margin-bottom: 3rem;
@@ -186,4 +197,10 @@ section {
       justify-content: space-evenly;
     }
   }
+}
+
+.footer {
+  background-color: $white;
+  padding: 1rem;
+  text-align: center;
 }
