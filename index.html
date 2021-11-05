@@ -136,9 +136,18 @@
     <div class="message-column">
       <div class="message-form">
         <form>
-          <input type="text" class="text-field" placeholder="Name">
-          <input type="text" class="text-field" placeholder="Email">
-          <textarea class="text-field" placeholder="Message"></textarea>
+          <div class="form-field">
+            <label for="name">Name :</label>
+            <input type="text" id="name" class="text-field">
+          </div>
+          <div class="form-field">
+            <label for="email">Email :</label>
+            <input type="text" id="email" class="text-field">
+          </div>
+          <div class="form-field">
+            <label for="message">Message :</label>
+            <textarea class="text-field" id="message" rows="8"></textarea>
+          </div>
           <input type="submit" class="button" value="Send Message">
         </form>
       </div>
