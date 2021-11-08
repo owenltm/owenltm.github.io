@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 $black: #212121;
+$dark: #424242;
 $grey: #757575;
 $white: #ffffff;
 $light: #e0e0e0;
@@ -47,13 +48,35 @@ img {
 
 .button {
   width: 100%;
+  margin: 0 0.5rem;
   padding: 1rem 1.5rem;
   border: none;
   background-color: $black;
   color: $white;
-  border-radius: 0.1rem;
+  border-radius: 0.2rem;
   font-weight: bold;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $dark;
+  }
+}
+
+.button-secondary {
+  width: 100%;
+  margin: 0 0.5rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  background-color: $grey;
+  color: $white;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $dark;
+    background-color: $light;
+  }
 }
 
 header {
@@ -91,8 +114,8 @@ header {
   background-color: $white;
   color: $black;
   height: 70%;
-  text-align: center;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
 
@@ -203,4 +226,111 @@ section {
   background-color: $white;
   padding: 1rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  header {
+    padding: 1rem 3rem;
+
+    .logo {
+      display: block;
+    }
+  }
+
+  .hero-nav {
+    display: block;
+    margin-top: 4rem;
+  }
+  
+  section {
+    padding: 1rem 3rem 4rem;
+    text-align: center;
+  
+    .section-title {
+      margin: 0 0 1rem
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    width: 100%;
+  }
+
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  header {
+    padding: 1.5rem 4.5rem;
+
+    nav ul {
+      justify-content: flex-end;
+    }
+  }
+
+  .hero {
+    height: 60%;
+    padding: 0 4.5rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+
+    .hero-social {
+      display: block;
+    }
+  }
+
+  section {
+    padding: 2rem 4.5rem 6rem;
+    text-align: left;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 3rem;
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .skills-container {
+    justify-content: start;
+  }
+
+  .work-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 3rem;
+  }
+
+  .message-column {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 3rem;
+
+    .message-form {
+      .button {
+        margin: 0
+      }
+    }
+
+    .social-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      ul {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
 }
