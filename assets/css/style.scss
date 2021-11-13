@@ -80,6 +80,10 @@ img {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  background-color: $white;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -266,8 +270,16 @@ section {
   header {
     padding: 1.5rem 4.5rem;
 
+    .logo {
+      font-size: 1.3rem;
+    }
+
     nav ul {
       justify-content: flex-end;
+
+      a {
+        padding: 0 0 0 2rem;
+      }
     }
   }
 
@@ -285,7 +297,7 @@ section {
   }
 
   section {
-    padding: 2rem 4.5rem 6rem;
+    padding: 2rem 4.5rem 4rem;
     text-align: left;
   }
 
@@ -307,7 +319,7 @@ section {
 
   .work-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 60%;
     grid-column-gap: 3rem;
   }
 
@@ -332,5 +344,101 @@ section {
         justify-content: space-between;
       }
     }
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 1.5rem 9rem;
+
+    .logo {
+      font-size: 2rem;
+    }
+  }
+
+  .hero {
+    height: 100%;
+    padding: 0 9rem;
+
+    .hero-content {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  section {
+    padding: 2rem 9rem 4rem;
+  }
+
+  .about {
+    img {
+      height: 80%;
+      object-fit: cover;
+    }
+  }
+
+  .skills-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    padding: 1.5rem 12rem;
+  }
+
+  .hero {
+    height: 100%;
+    padding: 0 12rem;
+
+    .hero-content {
+      .hero-title {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  section {
+    padding: 2rem 12rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+
+  body {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 1.5rem 18rem;
+  }
+
+  .hero {
+    height: 100%;
+    padding: 0 18rem;
+
+    .hero-content {
+      .hero-title {
+        font-size: 4.5rem;
+      }
+    }
+  }
+
+  section {
+    padding: 2rem 18rem 4rem;
   }
 }
