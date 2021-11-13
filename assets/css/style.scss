@@ -60,6 +60,14 @@ img {
   &:hover {
     background-color: $dark;
   }
+
+  &:disabled {
+    color: $grey;
+
+    &:hover {
+      background-color: $black;
+    }
+  }
 }
 
 .button-secondary {
