@@ -325,7 +325,7 @@ section {
 
   .message-column {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40% 60%;
     grid-column-gap: 3rem;
 
     .message-form {
