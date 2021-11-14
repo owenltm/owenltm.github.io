@@ -4,7 +4,7 @@ $black: #212121;
 $dark: #424242;
 $grey: #757575;
 $white: #ffffff;
-$light: #e0e0e0;
+$light: #eeeeee;
 
 * {
   box-sizing: border-box;
@@ -275,6 +275,12 @@ section {
     margin-bottom: 1rem;
   }
 
+  .skill-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.5rem 1rem;
+  }
+
   header {
     padding: 1.5rem 4.5rem;
 
@@ -425,6 +431,12 @@ section {
     width: 4rem;
     height: 4rem;
     margin-bottom: 3rem;
+  }
+
+  .skill-icon {
+    width: 8rem;
+    height: 4rem;
+    margin: 0 1rem 1rem;
   }
 
   .button {
