@@ -111,7 +111,7 @@ const Works = () => {
   ];
 
   return (
-    <Section id="portfolio" title="Recent Works">
+    <Section id="works" title="Recent Works">
       <div className="grid md:grid-cols-2 gap-8 w-full">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
