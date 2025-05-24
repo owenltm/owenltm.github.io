@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="h-screen w-full flex flex-col justify-center items-center bg-[#f5f5f5] text-gray-900">
+    <section className="min-h-screen w-full flex flex-col justify-center items-center bg-[#f5f5f5] text-gray-900 pt-24 md:pt-0">
       <div className="w-full">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1 space-y-8">
+          <div className="flex-1 space-y-8 text-center md:text-left">
             <div className="space-y-4">
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight">
                 Mobile App Developer
@@ -15,7 +15,7 @@ const Hero = () => {
               </p>
             </div>
             
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-4 pt-4 justify-center md:justify-start">
               <Link 
                 href="#works" 
                 className="px-6 py-3 bg-gray-900 text-gray-50 rounded-lg hover:bg-gray-800 transition-colors"

@@ -1,13 +1,14 @@
+import { Github, Linkedin, Mail } from 'lucide-react';
 import Section from './Section';
 
-const SocialLink = ({ icon, label, href }: { icon: string, label: string, href: string }) => (
+const SocialLink = ({ icon, label, href }: { icon: React.ReactNode, label: string, href: string }) => (
   <a 
     href={href}
     target="_blank"
     rel="noopener noreferrer" 
     className="flex items-center gap-3 px-4 py-3 bg-[#f5f5f5] border-2 border-gray-900 rounded-lg text-gray-900 hover:bg-gray-100 transition-colors"
   >
-    <span className="text-xl">{icon}</span>
+    {icon}
     <span>{label}</span>
   </a>
 );
@@ -79,21 +80,21 @@ const Contact = () => {
           </h3>
           
           <SocialLink 
-            icon="✉️"
+            icon={<Mail />}
             label="your.email@example.com"
-            href="mailto:your.email@example.com"
+            href="mailto:owenlwiantoro01@gmail.com"
           />
           
           <SocialLink 
-            icon="🐙"
-            label="github.com/yourusername"
-            href="https://github.com/yourusername"
+            icon={<Github />}
+            label="github.com/owenltm"
+            href="https://github.com/owenltm"
           />
           
           <SocialLink 
-            icon="💼"
-            label="linkedin.com/in/yourprofile"
-            href="https://linkedin.com/in/yourprofile"
+            icon={<Linkedin />}
+            label="linkedin.com/in/owenltm"
+            href="https://linkedin.com/in/owenltm"
           />
         </div>
       </div>
