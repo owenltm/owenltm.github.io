@@ -61,8 +61,8 @@ const Skills = () => {
           text: "Rapid prototyping and iterative development to align with evolving project goals"
         },
         {
-          text: "Collaborative workflows with Git, GitHub, and Figma",
-          highlight: ["Git", "GitHub", "Figma"]
+          text: "Collaborative workflows with Git and Figma",
+          highlight: ["Git", "Figma"]
         },
         {
           text: "End-to-end understanding of the product lifecycle — from concept to launch"

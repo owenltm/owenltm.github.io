@@ -23,7 +23,7 @@ const Contact = () => {
             Send me a message
           </h3>
           <p className="text-gray-600 mb-8">
-            I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+            I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your visions.
           </p>
           
           <form className="space-y-6">
@@ -82,19 +82,19 @@ const Contact = () => {
           <SocialLink 
             icon={<Mail />}
             label="your.email@example.com"
-            href="mailto:owenlwiantoro01@gmail.com"
+            href="mailto:your.email@example.com"
           />
           
           <SocialLink 
             icon={<Github />}
-            label="github.com/owenltm"
-            href="https://github.com/owenltm"
+            label="github.com/yourusername"
+            href="https://github.com/yourusername"
           />
           
           <SocialLink 
             icon={<Linkedin />}
-            label="linkedin.com/in/owenltm"
-            href="https://linkedin.com/in/owenltm"
+            label="linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/yourprofile"
           />
         </div>
       </div>

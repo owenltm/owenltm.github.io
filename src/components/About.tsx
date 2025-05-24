@@ -5,10 +5,10 @@ const About = () => {
     <Section id="about-me" title="About Me">
       <div className="space-y-3 text-lg text-gray-600">
         <p>
-          I'm <span className="font-semibold text-gray-900">Owen Lwiantoro</span>, 
+          I&apos;m <span className="font-semibold text-gray-900">Owen Lwiantoro</span>, 
           a mobile app developer who enjoys turning simple interactions into meaningful 
-          digital experiences. I'm passionate about creating apps that respond 
-          intuitively and make users' lives easier.
+          digital experiences. I&apos;m passionate about creating apps that respond 
+          intuitively and make users&apos; lives easier.
         </p>
 
         <p>
@@ -18,7 +18,7 @@ const About = () => {
         </p>
 
         <p>
-          I'm eager to grow further in mobile development roles where I can contribute 
+          I&apos;m eager to grow further in mobile development roles where I can contribute 
           to building apps that are both functional and enjoyable.
         </p>
 
