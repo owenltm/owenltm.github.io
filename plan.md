@@ -27,9 +27,6 @@ I’m eager to grow further in mobile development roles where I can contribute t
 
 Outside of coding, I unwind by playing racing and puzzle games — a fun way to recharge and keep my problem-solving skills sharp.
 
-### Photo
-![Owen Lwiantoro](path-to-your-photo.jpg)
-
 ---
 
 ## 3. Skills & Technologies
