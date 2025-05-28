@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Challengers App",
+    "description": "A mobile app that encourages users to create, join, and complete community challenges — designed to foster motivation and friendly competition.",
+    "role": "Developed the Android application's user interface and core functionalities, including API integration and local data handling.",
+    "features": [
+      "Create and publish challenges with detailed steps",
+      "Join challenges and track progress",
+      "User profiles with earned medals and a global leaderboard"
+    ],
+    "technologies": ["Android", "Java", "REST API", "SQLite"],
+    "imageUrl": ""
+  },
+  {
+    "title": "Property Listing Website",
+    "description": "A modern real estate platform for browsing and filtering property listings such as villas and land plots — optimized for usability and lead conversion.",
+    "role": "Co-developed the project with the team. Focused on building robust API endpoints with Laravel and implementing interactive features on the frontend using Next.js.",
+    "features": [
+      "Browse latest property listings",
+      "Advanced filtering by area, type, bathrooms, and more",
+      "Detailed listing pages with photos and descriptions",
+      "Save properties to a shortlist for later"
+    ],
+    "technologies": ["Laravel", "REST API", "Next.js", "Tailwind CSS", "MySQL"],
+    "imageUrl": ""
+  },
+  {
+    "title": "Customer Service Chatbot",
+    "description": "Internal chatbot assistant built to handle stock keeping and other administration tasks, leveraging AI language model integration for effective query understanding and response.",
+    "role": "Developed the chatbot's backend logic and integrated it with an AI language model to understand and respond to queries effectively.",
+    "features": [
+      "Natural language understanding for stock keeping and administration",
+      "AI-powered responses to internal queries",
+      "Integration with existing business workflows"
+    ],
+    "technologies": ["Typescript", "AI SDK", "Webhooks"],
+    "imageUrl": ""
+  }
+] 

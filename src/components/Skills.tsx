@@ -1,4 +1,14 @@
 import Section from './Section';
+import skillsData from '../data/skills.json';
+
+type SkillItem = { text: string; highlight?: string[] };
+type SkillCategory = { title: string; items: SkillItem[] };
+
+type SkillsData = {
+  mobile: SkillCategory;
+  web: SkillCategory;
+  others: SkillCategory;
+};
 
 const SkillCard = ({ title, items }: { title: string, items: { text: string, highlight?: string[] }[] }) => (
   <div className="bg-[#f5f5f5] rounded-lg p-8 border-2 border-gray-900 text-gray-900">
@@ -28,55 +38,13 @@ const SkillCard = ({ title, items }: { title: string, items: { text: string, hig
 );
 
 const Skills = () => {
-  const skillsData = {
-    mobile: {
-      title: "Mobile Development",
-      items: [
-        {
-          text: "Deliver high-quality cross-platform apps using Flutter and Kotlin",
-          highlight: ["Flutter", "Kotlin"]
-        },
-        {
-          text: "Prioritize performance, visual consistency, and user-friendly interactions"
-        }
-      ]
-    },
-    web: {
-      title: "Full-Stack Web Development",
-      items: [
-        {
-          text: "Engineer responsive frontends with Next.js, React, and Tailwind CSS",
-          highlight: ["Next.js", "React", "Tailwind CSS"]
-        },
-        {
-          text: "Build robust APIs and backend services using Laravel, MySQL, and Firebase",
-          highlight: ["Laravel", "MySQL", "Firebase"]
-        }
-      ]
-    },
-    workflow: {
-      title: "How I Work",
-      items: [
-        {
-          text: "Rapid prototyping and iterative development to align with evolving project goals"
-        },
-        {
-          text: "Collaborative workflows with Git and Figma",
-          highlight: ["Git", "Figma"]
-        },
-        {
-          text: "End-to-end understanding of the product lifecycle — from concept to launch"
-        }
-      ]
-    }
-  };
-
+  const data: SkillsData = skillsData;
   return (
     <Section id="skills" title="Skills & Technologies">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-        <SkillCard {...skillsData.mobile} />
-        <SkillCard {...skillsData.web} />
-        <SkillCard {...skillsData.workflow} />
+        <SkillCard {...data.mobile} />
+        <SkillCard {...data.web} />
+        <SkillCard {...data.others} />
       </div>
     </Section>
   );

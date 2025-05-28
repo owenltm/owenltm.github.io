@@ -81,20 +81,20 @@ const Contact = () => {
           
           <SocialLink 
             icon={<Mail />}
-            label="your.email@example.com"
-            href="mailto:your.email@example.com"
+            label="owenlwiantoro01@gmail.com"
+            href="mailto:owenlwiantoro01@gmail.com"
           />
           
           <SocialLink 
             icon={<Github />}
-            label="github.com/yourusername"
-            href="https://github.com/yourusername"
+            label="owenltm"
+            href="https://github.com/owenltm"
           />
           
           <SocialLink 
             icon={<Linkedin />}
-            label="linkedin.com/in/yourprofile"
-            href="https://linkedin.com/in/yourprofile"
+            label="Owen Lwiantoro"
+            href="https://www.linkedin.com/in/owen-lwiantoro-a62a5b192/"
           />
         </div>
       </div>
