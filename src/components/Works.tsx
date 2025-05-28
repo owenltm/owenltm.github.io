@@ -81,32 +81,6 @@ const Works = () => {
       technologies: ["Next.js", "React", "Tailwind CSS", "Firebase", "Node.js"],
       imageUrl: "/project-alpha.jpg"
     },
-    {
-      title: "Project Alpha",
-      description: "An innovative web application designed to streamline task management for small teams, enhancing productivity and collaboration.",
-      role: "Lead Developer & UI/UX Designer. Responsible for the full-stack development, from initial concept and wireframing to deployment. Implemented core features and ensured a responsive user interface.",
-      features: [
-        "Real-time collaboration on tasks",
-        "Drag-and-drop interface for task prioritization",
-        "Automated notification system",
-        "User authentication and role management"
-      ],
-      technologies: ["Next.js", "React", "Tailwind CSS", "Firebase", "Node.js"],
-      imageUrl: "/project-alpha.jpg"
-    },
-    {
-      title: "Project Alpha",
-      description: "An innovative web application designed to streamline task management for small teams, enhancing productivity and collaboration.",
-      role: "Lead Developer & UI/UX Designer. Responsible for the full-stack development, from initial concept and wireframing to deployment. Implemented core features and ensured a responsive user interface.",
-      features: [
-        "Real-time collaboration on tasks",
-        "Drag-and-drop interface for task prioritization",
-        "Automated notification system",
-        "User authentication and role management"
-      ],
-      technologies: ["Next.js", "React", "Tailwind CSS", "Firebase", "Node.js"],
-      imageUrl: "/project-alpha.jpg"
-    },
     // Add more projects here
   ];
 

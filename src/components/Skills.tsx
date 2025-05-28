@@ -37,6 +37,10 @@ const Skills = () => {
           highlight: ["Flutter", "Kotlin"]
         },
         {
+          text: "Write scalable code with clean architecture patterns like MVVM and Bloc",
+          highlight: ["MVVM", "Bloc"]
+        },
+        {
           text: "Prioritize performance, visual consistency, and user-friendly interactions"
         }
       ]
@@ -51,21 +55,23 @@ const Skills = () => {
         {
           text: "Build robust APIs and backend services using Laravel, MySQL, and Firebase",
           highlight: ["Laravel", "MySQL", "Firebase"]
+        },
+        {
+          text: "Experience with AI-powered features, such as integrating LLMs into apps and chatbots",
+          highlight: ["AI-powered features", "LLMs", "apps", "chatbots"]
         }
       ]
     },
-    workflow: {
-      title: "How I Work",
+    others: {
+      title: "Others",
       items: [
-        {
-          text: "Rapid prototyping and iterative development to align with evolving project goals"
-        },
         {
           text: "Collaborative workflows with Git and Figma",
           highlight: ["Git", "Figma"]
         },
         {
-          text: "End-to-end understanding of the product lifecycle — from concept to launch"
+          text: "AI Language Model integrations (e.g., integrating AI with chatbots)",
+          highlight: ["AI Language Model", "chatbots"]
         }
       ]
     }
@@ -76,7 +82,7 @@ const Skills = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         <SkillCard {...skillsData.mobile} />
         <SkillCard {...skillsData.web} />
-        <SkillCard {...skillsData.workflow} />
+        <SkillCard {...skillsData.others} />
       </div>
     </Section>
   );
