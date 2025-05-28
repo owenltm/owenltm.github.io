@@ -1,5 +1,4 @@
 import Section from './Section';
-import Image from 'next/image';
 import projectsData from '../data/projects.json';
 
 interface ProjectCardProps {
@@ -11,7 +10,7 @@ interface ProjectCardProps {
   imageUrl: string;
 }
 
-const ProjectCard = ({ title, description, role, features, technologies, imageUrl }: ProjectCardProps) => (
+const ProjectCard = ({ title, description, role, features, technologies }: ProjectCardProps) => (
   <div className="bg-[#f5f5f5] rounded-lg border-2 border-gray-900 overflow-hidden">
     {/* <div className="aspect-[3/2] relative bg-gray-200">
       <Image 
