@@ -1,0 +1,48 @@
+{
+  "mobile": {
+    "title": "Mobile Development",
+    "items": [
+      {
+        "text": "Deliver high-quality cross-platform apps using Flutter and Kotlin",
+        "highlight": ["Flutter", "Kotlin"]
+      },
+      {
+        "text": "Write scalable code with clean architecture patterns like MVVM and Bloc",
+        "highlight": ["MVVM", "Bloc"]
+      },
+      {
+        "text": "Prioritize performance, visual consistency, and user-friendly interactions"
+      }
+    ]
+  },
+  "web": {
+    "title": "Full-Stack Web Development",
+    "items": [
+      {
+        "text": "Engineer responsive frontends with Next.js, React, and Tailwind CSS",
+        "highlight": ["Next.js", "React", "Tailwind CSS"]
+      },
+      {
+        "text": "Build robust APIs and backend services using Laravel, MySQL, and Firebase",
+        "highlight": ["Laravel", "MySQL", "Firebase"]
+      },
+      {
+        "text": "Experience with AI-powered features, such as integrating LLMs into apps and chatbots",
+        "highlight": ["AI-powered features", "LLMs", "apps", "chatbots"]
+      }
+    ]
+  },
+  "others": {
+    "title": "Others",
+    "items": [
+      {
+        "text": "Collaborative workflows with Git and Figma",
+        "highlight": ["Git", "Figma"]
+      },
+      {
+        "text": "AI Language Model integrations (e.g., integrating AI with chatbots)",
+        "highlight": ["AI Language Model", "chatbots"]
+      }
+    ]
+  }
+} 
