@@ -13,14 +13,14 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, role, features, technologies, imageUrl }: ProjectCardProps) => (
   <div className="bg-[#f5f5f5] rounded-lg border-2 border-gray-900 overflow-hidden">
-    <div className="aspect-[3/2] relative bg-gray-200">
+    {/* <div className="aspect-[3/2] relative bg-gray-200">
       <Image 
         src={imageUrl} 
         alt={title}
         fill
         className="object-cover"
       />
-    </div>
+    </div> */}
     <div className="p-8 space-y-6">
       <h3 className="text-2xl font-semibold text-gray-900">{title}</h3>
       
