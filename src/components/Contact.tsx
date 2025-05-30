@@ -34,6 +34,8 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
+                name="name"
+                required
                 placeholder="Your Name"
                 className="w-full px-4 py-3 bg-white border-2 border-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
               />
@@ -46,6 +48,8 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
+                name="email"
+                required
                 placeholder="your.email@example.com"
                 className="w-full px-4 py-3 bg-white border-2 border-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
               />
@@ -57,7 +61,9 @@ const Contact = () => {
               </label>
               <textarea
                 id="message"
+                name="message"
                 rows={4}
+                required
                 placeholder="Your Message"
                 className="w-full px-4 py-3 bg-white border-2 border-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 resize-none"
               />
@@ -68,7 +74,7 @@ const Contact = () => {
               disabled
               className="w-full px-6 py-3 bg-gray-400 text-white rounded-lg font-medium cursor-not-allowed"
             >
-              Send Message (Disabled)
+              Send Message
             </button>
           </form>
         </div>
