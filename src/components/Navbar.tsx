@@ -21,6 +21,19 @@ const Navbar = () => {
     { href: '#contact', label: 'Contact' },
   ];
 
+  // Smooth scroll handler
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const id = href.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        setIsMobileMenuOpen(false); // close mobile menu if open
+      }
+    }
+  };
+
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 bg-[#f5f5f5] backdrop-blur-sm z-50">
@@ -34,13 +47,14 @@ const Navbar = () => {
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
-                <Link 
+                <a
                   key={link.href}
-                  href={link.href} 
+                  href={link.href}
                   className="text-gray-600 hover:text-gray-900 transition-colors"
+                  onClick={e => handleNavClick(e, link.href)}
                 >
                   {link.label}
-                </Link>
+                </a>
               ))}
             </div>
 
@@ -99,13 +113,13 @@ const Navbar = () => {
           <div className="space-y-8 text-center">
             {navLinks.map((link) => (
               <div key={link.href}>
-                <Link 
-                  href={link.href} 
+                <a
+                  href={link.href}
                   className="text-3xl text-gray-900 hover:text-gray-600 transition-colors"
-                  onClick={closeMobileMenu}
+                  onClick={e => handleNavClick(e, link.href)}
                 >
                   {link.label}
-                </Link>
+                </a>
               </div>
             ))}
           </div>
