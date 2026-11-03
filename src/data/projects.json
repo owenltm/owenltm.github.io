@@ -9,7 +9,7 @@
       "User profiles with earned medals and a global leaderboard"
     ],
     "technologies": ["Android", "Java", "REST API", "SQLite"],
-    "imageUrl": ""
+    "imageUrl": "/assets/img/challengers.png"
   },
   {
     "title": "Property Listing Website",
@@ -22,7 +22,7 @@
       "Save properties to a shortlist for later"
     ],
     "technologies": ["Laravel", "REST API", "Next.js", "Tailwind CSS", "MySQL"],
-    "imageUrl": ""
+    "imageUrl": "/assets/img/property-bali-sale.png"
   },
   {
     "title": "Customer Service Chatbot",
@@ -34,6 +34,6 @@
       "Integration with existing business workflows"
     ],
     "technologies": ["Typescript", "AI SDK", "Webhooks"],
-    "imageUrl": ""
+    "imageUrl": null
   }
 ] 

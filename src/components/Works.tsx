@@ -1,5 +1,6 @@
 import Section from './Section';
 import projectsData from '../data/projects.json';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   title: string;
@@ -7,19 +8,19 @@ interface ProjectCardProps {
   role: string;
   features: string[];
   technologies: string[];
-  imageUrl: string;
+  imageUrl?: string | null;
 }
 
-const ProjectCard = ({ title, description, role, features, technologies }: ProjectCardProps) => (
+const ProjectCard = ({ title, description, role, features, technologies, imageUrl }: ProjectCardProps) => (
   <div className="bg-[#f5f5f5] rounded-lg border-2 border-gray-900 overflow-hidden">
-    {/* <div className="aspect-[3/2] relative bg-gray-200">
+    {imageUrl && <div className="aspect-[3/2] relative bg-gray-200 ">
       <Image 
         src={imageUrl} 
         alt={title}
         fill
-        className="object-cover"
+        className="object-contain py-4 md:py-8"
       />
-    </div> */}
+    </div>}
     <div className="p-8 space-y-6">
       <h3 className="text-2xl font-semibold text-gray-900">{title}</h3>
       
@@ -71,7 +72,7 @@ const Works = () => {
 
   return (
     <Section id="works" title="Recent Works">
-      <div className="grid md:grid-cols-2 gap-8 w-full">
+      <div className="grid lg:grid-cols-2 gap-8 w-full">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
